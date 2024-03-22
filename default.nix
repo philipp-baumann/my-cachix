@@ -1,6 +1,6 @@
 # use the cutting edge of R, CRAN and Nixpkgs inputs from this fork and 
 # CI update triggered by
-# https://github.com/philipp-baumann/nixpkgs/blob/r-daily-source/.github/workflows/r-update.yml
+#ttps://github.com/philipp-baumann/nixpkgs/blob/r-daily-source/.github/workflows/r-update.yml
 let
  pkgs = import (fetchTarball "https://github.com/philipp-baumann/nixpkgs/archive/refs/heads/r-daily.tar.gz") {};
  rpkgs = builtins.attrValues {
@@ -19,6 +19,5 @@ let
     LC_PAPER = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
 
-    buildInputs = [  rpkgs  system_packages  ];
-      
+    buildInputs = [ rpkgs system_packages ];
   }
