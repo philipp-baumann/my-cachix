@@ -27,7 +27,8 @@ nix-env -iA cachix -f https://cachix.org/api/v1/install
 You can automatically write `$HOME/.config/nix/nix.conf` like so.
 
 However, currently, you need a `x86_64-linux` system to use the cache, since
-the action runs on runners with this architecture.
+the action runs on runners with this architecture. But hey, maybe soon I'll
+deliver some `aarch64-darwin` and `x86_64-darwin` cache goodies.
 
 ```sh
 cachix use philipp-baumann
