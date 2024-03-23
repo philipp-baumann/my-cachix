@@ -4,7 +4,7 @@
 let
  pkgs = import (fetchTarball "https://github.com/philipp-baumann/nixpkgs/archive/refs/heads/r-daily.tar.gz") {};
  rpkgs = builtins.attrValues {
-  inherit (pkgs.rPackages) data_table;
+  inherit (pkgs.rPackages) tidyverse; # RNAmf has just changed
 };
    system_packages = builtins.attrValues {
   inherit (pkgs) R glibcLocales nix ;

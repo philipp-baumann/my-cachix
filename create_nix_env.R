@@ -2,6 +2,6 @@ library("rix")
 
 rix(
   r_ver = "latest",
-  r_pkgs = c("data_table"),
+  r_pkgs = c("tidyverse"),
   overwrite = FALSE
 )
